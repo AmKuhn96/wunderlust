@@ -7,31 +7,36 @@
 </head>
 <body>
 <header>
-    <h1>Wunderlust Travel</h1>
-<img src="images/logo.png" alt="logo">
-<h2>Let Wunderlust Travel help you plan the trip of your dreams!</h2>
+  <h1>Wunderlust Travel</h1>
+  <img src="images/logo.png" alt="logo">
+  <h2>Let Wunderlust Travel help you plan the trip of your dreams!</h2>
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-<nav>
+  <nav>
     <a href="#">Destinations</a>
     <a href="#">Inspirations</a>
     <a href="#">Special</a>
     <a href="#">Contact Us</a>
-</nav>
+  </nav>
 </header>
 
-<section>
-  <h2>Majorca</h2>
-  <p>
-    Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, 
-    picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, 
-    while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
-  </p>
-  
-  <img src="images/majorca-waves.png" alt="Majorca Waves">
-  <img src="images/majorca-beach.png" alt="Majorca Beach">
-  <img src="images/majorca-cove.png" alt="Majorca Cove">
-</section>
+<main>
+    <article>
+    <h2>Majorca</h2>
+    <p>
+      Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, 
+      picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, 
+      while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
+    </p>
+    
+  <figure>
+    <img src="images/majorca-waves.png" alt="Majorca Waves">
+    <img src="images/majorca-beach.png" alt="Majorca Beach">
+    <img src="images/majorca-cove.png" alt="Majorca Cove">
+  </figure>
+
+    </article>
+
 
 <section>
   <h2>Plan Your Trip</h2>
@@ -125,7 +130,7 @@
   <h3>Miranda Blake</h3>
   <img src="images/miranda-blake.png" alt="Miranda Blake">
   <p>Traveling From: London, England</p>
-  <blockquote>“I traveled here for business, but my stay was extended. Now it is my home.”</blockquote>
+  <q>I traveled here for business, but my stay was extended. Now it is my home.</q>
 </article>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -133,7 +138,7 @@
   <h3>Max Winter</h3>
   <img src="images/max-winter.png" alt="Max Winter">
   <p>Traveling From: Berlin, Germany</p>
-  <blockquote>“Great escape from my reality. Beautiful sunsets, wonderful people, great beer. ”</blockquote>
+  <q>Great escape from my reality. Beautiful sunsets, wonderful people, great beer.</q>
 </article>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -141,7 +146,7 @@
   <h3>Inés Villegoes</h3>
   <img src="images/ines-villegoes.png" alt="Ines Villegoes">
   <p>Traveling From: Barcelona, Spain</p>
-  <blockquote>“A very safe environment for all travelers.”</blockquote>
+  <q>A very safe environment for all travelers.</q>
 </article>
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -150,7 +155,7 @@
   <h3>Carmen Lorenzo</h3>
   <img src="images/carmen-lorenzo.png" alt="Carmen Lorenzo">
   <p>Traveling From: Madrid, Spain</p>
-  <blockquote>“Live, laugh, love-- everything you need in Majorca.”</blockquote>
+  <q>Live, laugh, love-- everything you need in Majorca.</q>
 </article>
 </section>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -211,27 +216,26 @@
 </section>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-<form>
-  <h3>Contact Us</h3>
-  <label for="fname">First Name</label>
-  <input type="text" id="fname" name="firstname" placeholder="Enter first name..">
 
+<h3>Contact Us</h3>
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Enter first name.."><br><br>
   <label for="lname">Last Name</label>
   <input type="text" id="lname" name="lastname" placeholder="Enter last name..">
-
+</form>
+<form>
   <p>Contact Method (Email, Text, Phone)</p>
-  <label for="radio-email">Email Address</label>
+  <label for="radio-email">Email</label>
   <input type="radio" id="radio-email" name="remail">
-
-  <label for="radio-phone">Phone Number</label>
-  <input type="radio" id="radio-phone" name="pradio">
-
-  <label for="email">Email Address</label>
-  <input type="text" id="email" name="emaila" placeholder="Enter email..">
-
-  <label for="phone">Phone Number</label>
-  <input type="tel" id="phone" name="pnumber" placeholder="Enter telephone number..">
-  
+  <label for="radio-text">Text</label>
+  <input type="radio" id="radio-text" name="tradio">
+  <label type="radio-phone">Phone</label>
+  <input type="radio" id="radio-phone" name="pradio"><br>
+  <label for="email">Email Address</label><br>
+  <input type="text" id="email" name="emaila" placeholder="Enter email.."><br>
+  <label for="phone">Phone Number</label><br>
+  <input type="tel" id="phone" name="pnumber" placeholder="Enter telephone number.."><br>
 </form>
 
 <form>
@@ -240,12 +244,13 @@
     <option value="granada">Grenada</option>
     <option value="ibiza">Ibiza</option>
     <option value="madrid">Madrid</option>
-    <oprion value="majorca">Majorca</oprion>
+    <option value="majorca">Majorca</option>
     <option value="seville">Seville</option>
     <option value="tenerife">Tenerife</option>
     <option value="valencia">Valencia</option>
-  </select>
-
+  </select><br>
+</form>
+<form>
   Travel Time: <select name="travel" id="traveltime">
     <option value="fall">Fall</option>
     <option value="winter">Winter</option>
@@ -255,9 +260,11 @@
   </select>
 </form>
 
+</main>
+
 <footer>
-  Copyright 2021 Wunderlust
-  <a href="#">Statement</a>
+  <p>Copyright 2021 Wunderlust</p><br>
+  <a href="#">Statement</a><br>
   <a href="#">Terms of Service</a>
 </footer>
 
@@ -266,3 +273,6 @@
 
 </body>
 </html>
+
+
+
